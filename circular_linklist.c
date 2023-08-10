@@ -12,7 +12,7 @@ void display()
         printf("list is empty\n");
     else {
         while (ptr-> next!=head) {
-            printf("%d  ", ptr->data);
+           // printf("%d  ", ptr->data);
             ptr = ptr->next;
         }
     }

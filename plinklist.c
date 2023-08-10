@@ -85,12 +85,13 @@ void insertmid(int val,int p)
     struct node *temp=malloc(sizeof(struct node));
     temp->data=val;
     //temp->next=p;
-    while(ptr->data!=p)
+    while(ptr->data!=p){
          ptr=ptr->next;
     temp->next=ptr->next;
     ptr->next=temp;
-
-}
+    }
+ 
+}   
 void middelect(int pos)
 {
     struct node *ptr=head;
@@ -100,7 +101,7 @@ void middelect(int pos)
         p=ptr;
         ptr=ptr->next;
     }
-    p->next=ptr->next;
+    p->next=ptr->next->next->next;
     free(ptr);
 }
 
@@ -112,14 +113,14 @@ int main() {
     insert(600);
     insert(400);
     insert(500);
-
-    
+    insert(20);
+    insert(30);
+    insert(40);
     display();
-    firstdelect();
-    insertmid(500,100);
-    middelect(200);
-    delect();
-    delect();
+    //insertmid(500,100);
+    middelect(600);
+   // delect();
+   // delect();
     display();
     
 }

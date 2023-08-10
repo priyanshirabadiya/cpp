@@ -30,6 +30,7 @@ void insert(int val)
     temp->next=NULL;
     if(head==NULL)
     {
+        
         head=temp;
         return;
 
@@ -65,10 +66,10 @@ int main()
 {
 
     insert(100);
-    insert(200);
-    display();
-    delete(100);
-    delete(200);
+   // insert(200);
+   // display();
+  //  delete(100);
+   // delete(200);
     display();
 }
 
