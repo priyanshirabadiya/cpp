@@ -31,6 +31,6 @@ int main()
 
     printf("X:\n data:%d \t ch:%c",y.ptr->data,y.ptr ->ch); 
     printf("\n\nY:\n data:%d \t ch:%c",x.ptr->data,x.ptr ->ch);
-    printf("\n\nT:\n data:%d \t ch:%c",y.ptr->data,y.ptr ->ch);
+    printf("\n\nT:\n data:%d \t ch:%c",r.ptr->data,r.ptr ->ch);
     printf("\n\nR:\n data:%d \t ch:%c",t.ptr->data,t.ptr ->ch);   
 }

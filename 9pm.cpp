@@ -8,10 +8,10 @@ struct self {
 };
 
 class test {
-    int x, y;
-    char ch[20];
-    int roll_no;
-    struct self* ptr;
+ //   int x, y;
+  //  char ch[20];
+   // int roll_no;
+   // struct self* link;
 };
 
 class test2 : public test {
