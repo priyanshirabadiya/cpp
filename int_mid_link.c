@@ -101,24 +101,24 @@ void middelect(int pos)
         p=ptr;
         ptr=ptr->next;
     }
-    p->next=ptr->next->next->next;
+    p->next=ptr->next;
     free(ptr);
 }
 
 int main() {
-   
-    insertfirst(10);
-    insert(100);
-    insert(200);
-    insert(600);
-    insert(400);
-    insert(500);
+    
+    insert(10);
     insert(20);
+    insert(60);
+    insert(40);
+    insert(50);
+    insert(90);
     insert(30);
     insert(40);
     display();
-    //insertmid(500,100);
-    middelect(600);
+    insertfirst(450);
+    insertmid(500,60);
+    middelect(50);
    // delect();
    // delect();
     display();

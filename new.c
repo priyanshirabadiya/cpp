@@ -81,27 +81,31 @@ void insertMid(int val, int p) {
     ptr->next = temp;
 }
 
-void deleteMid(int pos) {
-    struct node *ptr = head;
-    struct node *p;
-    while (ptr->data != pos) {
-        p = ptr;
-        ptr = ptr->next;
-    }
-    p->next = ptr->next;
-    free(ptr);
+//void deleteMid(int pos) {
+//    struct node *ptr = head;
+//    struct node *p;
+//    while (ptr->data != pos) {
+//        p = ptr;
+//        ptr = ptr->next;
+//    }
+//    p->next = ptr->next;
+//    free(ptr);
 
-}
+//}
 
 int main()
 {
      insertFirst(10);
     insert(100);
     insert(200);
-    deleteFirst();
+    insert(30);
+    insert(40);
+    insert(50);
     display();
-    //insertFirst(10);
-    insertMid(30,100);
-    deleteMid(200);
+   // insertFirst(10);
+   // deleteFirst();
+    insertMid(30,11);
+  //  deleteMid(200);
     display();
+    return 0;
 }

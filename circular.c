@@ -97,26 +97,22 @@ void deletEnd()
     free(ptr);
     return;
 }
-void deletFrist()
-{
-    struct node *ptr=head;
-    struct node *temp=malloc(sizeof(struct node));
-    struct node *p=ptr;
-    while(ptr->next!=head)
-        ptr->next=p->next;
-        p->next=temp;
-        temp=head;
-    free(ptr);
-    return;
-  //  while(ptr->next!=head)
-  //      ptr=ptr->next;
-   // ptr->next=temp;
-   // temp->next=head;
-  //  head=temp;
-}
+//void deletFrist()
+//{
+ //   struct node *ptr=head;
+ //   struct node *temp=malloc(sizeof(struct node));
+ //   struct node *p=ptr;
+ //   while(ptr->next!=head)
+ //       ptr->next=p->next;
+ //       p->next=temp;
+ //       temp=head;
+ //   free(ptr);
+ //   return;
+  
+//}
 int main()
 {
-   // insertFrist(100);
+   
     insertEnd(10);
     insertEnd(20);
     insertEnd(30);
@@ -126,7 +122,7 @@ int main()
     insertFrist(100);
     insertmid(5,20);
     deletEnd();
-   // deletFrist();
+  //  deletFrist();
     deletmid(40);
     display();
 }

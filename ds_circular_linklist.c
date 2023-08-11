@@ -3,6 +3,7 @@
 struct node {
     int data;
     struct node *next;
+    struct node *prev;
 };
 struct node *head=NULL;
 void display() 
@@ -12,7 +13,7 @@ void display()
         printf("list is empty\n");
     else {
         while (ptr-> next!=head) {
-           // printf("%d  ", ptr->data);
+            printf("%d  ", ptr->data);
             ptr = ptr->next;
         }
     }
@@ -34,6 +35,8 @@ void insert(int val) {
         ptr=ptr->next;
     ptr->next=temp;
     temp->next=head;
+    temp->prev=ptr;
+
     return;
 }
 int main()
@@ -41,5 +44,7 @@ int main()
     insert(100);
     insert(200);
     insert(300);
+    insert(600);
+    insert(500);
     display();
 }
