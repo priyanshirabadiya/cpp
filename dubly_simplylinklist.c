@@ -5,7 +5,6 @@ struct node{
     struct node*next;
     struct node *prev;
 };
-
 struct node *head=NULL;
 void display()
 {
@@ -25,9 +24,7 @@ void display()
 }
 void insert(int val)
 {
-    //struct node prev->ptr;
     struct node *ptr=head;
-   // struct node *prev = ptr;
     struct node *temp= malloc(sizeof(struct node));
     temp->data=val;
     temp->next=NULL;
@@ -116,9 +113,9 @@ void middelect(int pos)
     }
 
  }
- 
 int main()
 {
+
     insertfirst(10);
     insert(100);
     insert(200);
