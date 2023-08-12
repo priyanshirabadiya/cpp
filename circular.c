@@ -122,6 +122,7 @@ int main()
     insertEnd(22);
     display();
     insertFrist(100);
+    insertFrist(200);
     insertmid(5,20);
     deletEnd();
     deletFrist();
